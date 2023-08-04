@@ -3,56 +3,56 @@ const time = [
         url: "https://ca.slack-edge.com/TM13XHBBQ-U04D382RM0S-e856b713b7a6-512",
         nome: "Enza Rafaela",
         funcao: "Pessoa Especialista",
-        linkedin: "",
-        github: ""
+        linkedin: "https://www.linkedin.com/in/enzarafaela/",
+        github: "https://github.com/enzarafaela"
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U01FLMM2CJ1-c77bcc8d5e26-512",
         nome: "Carolzita",
         funcao: "Pessoa Especialista",
-        linkedin: "",
-        github: ""
+        linkedin: "https://www.linkedin.com/in/caabeatriz/",
+        github: "https://github.com/devcarolzita"
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U035TM9C7DJ-50dd640a9409-512",
         nome: "MariDê",
-        funcao: "Facilitação e Experiência",
-        linkedin: "",
-        github: ""
+        funcao: "Facilitação Soft Skills e Carreira",
+        linkedin: "https://www.linkedin.com/in/mariana-demarchi/",
+        github: "https://github.com/madguarda"
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U023CHBDWD8-27fd1acd067c-512",
         nome: "J Lo",
-        funcao: "Facilitação e Experiência",
-        linkedin: "",
+        funcao: "Facilitação Experiência",
+        linkedin: "https://www.linkedin.com/in/jessica-lopes-/",
         github: ""
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U01JQRR7FSS-08320a8171e3-512",
         nome: "Joi",
         funcao: "Pessoa Instrutora",
-        linkedin: "",
-        github: ""
+        linkedin: "https://www.linkedin.com/in/joioliveira/",
+        github: "https://github.com/joicyoliv"
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U03DNHZLCH1-1673b49a990f-512",
         nome: "Thalles",
         funcao: "Pessoa Instrutora",
-        linkedin: "",
-        github: ""
+        linkedin: "https://www.linkedin.com/in/thallescarneiro/",
+        github: "https://github.com/thalles-carneiro"
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U02BG785KB9-a2e4ac4dda7b-512",
         nome: "Ana Laura",
         funcao: "Pessoa Instrutora",
-        linkedin: "",
-        github: ""
+        linkedin: "https://www.linkedin.com/in/ana-laura-berger/",
+        github: "https://github.com/anabergerr"
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U037QQJ487M-973616d0c500-512",
         nome: "Laís Paggi",
         funcao: "Coordenadora de Turma",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/la%C3%ADs-cristina-paggi-81897022/",
         github: ""
         
     }
@@ -272,20 +272,22 @@ window.onload = () => {
 
         // Cria o link do LinkedIn
         let linkLinkedin = document.createElement('a');
-        linkLinkedin.href = "#";  // Adicione o URL do perfil do LinkedIn aqui
+        linkLinkedin.href = pessoa.linkedin;  // Adicione o URL do perfil do LinkedIn aqui
         let iconLinkedin = document.createElement('i');
         iconLinkedin.className = "bi bi-linkedin";
         linkLinkedin.appendChild(iconLinkedin);
         cardContainerSocial.appendChild(linkLinkedin);
 
-        // Cria o link do GitHub
-        let linkGithub = document.createElement('a');
-        linkGithub.href = "#";  // Adicione o URL do perfil do GitHub aqui
-        let iconGithub = document.createElement('i');
-        iconGithub.className = "bi bi-github";
-        linkGithub.appendChild(iconGithub);
-        cardContainerSocial.appendChild(linkGithub);
-
+        if (pessoa.github !== "") {
+            // Cria o link do GitHub
+            let linkGithub = document.createElement('a');
+            linkGithub.href = pessoa.github;  // Adicione o URL do perfil do GitHub aqui
+            let iconGithub = document.createElement('i');
+            iconGithub.className = "bi bi-github";
+            linkGithub.appendChild(iconGithub);
+            cardContainerSocial.appendChild(linkGithub);
+        }
+        
         cardBody.appendChild(cardContainerSocial);
 
         // Adiciona o corpo do card ao card
@@ -308,4 +310,5 @@ window.onload = () => {
     //     elementoDetails.appendChild(elementoParagrafo);
     //     body.appendChild(elementoDetails);
     // });
+
 }

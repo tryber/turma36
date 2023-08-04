@@ -297,10 +297,11 @@ iframe {
     margin-top: 5px;
 }
 
+#agenda h2,
 #time h2,
 #projetos h2 {
     font-size: 35px;
-    line-height: 32px;
+    line-height: 40px;
     font-weight: 800;
     color: #081828;
     /* font-weight: bold; */
@@ -391,4 +392,17 @@ p {
 
 #projetos {
     height: 100vh;
+}
+
+.container-projeto {
+    display: flex;
+    justify-content: center;
+}
+
+.container-projeto img {
+    width: 400px;
+}
+
+.container-projeto div {
+    margin: 100px;
 }
