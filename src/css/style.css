@@ -201,6 +201,14 @@ nav a:hover {
     font-size: 1.5rem;
 }
 
+#agenda {
+    padding: 70px;
+}
+
+#time .row {
+    padding: 0;
+}
+
 @media screen and (max-width: 768px) {
     .sandwich {
         display: inline;
@@ -212,31 +220,37 @@ nav a:hover {
     }
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
     .content {
         max-width: 540px
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .content {
         max-width: 720px;
     }
 }
 
-@media (min-width: 992px) {
+
+@media screen and (min-width: 992px) {
     .content {
         max-width: 960px
     }
+
+    #time .row {
+        padding: 0 150px;
+    }
+
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .content {
         max-width: 1140px
     }
 }
 
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
     .content {
         max-width: 1320px
     }
@@ -313,10 +327,6 @@ iframe {
     border-radius: 1.1rem;
 }
 
-#time .row {
-    padding: 0 150px;
-}
-
 p {
     font-size: 15px;
     color: #888;
@@ -348,10 +358,6 @@ p {
 .agenda-avisos a {
     text-decoration: none;
     color: #1db702
-}
-
-#agenda {
-    padding: 70px 150px 0px 150px;
 }
 
 #time .card-body {
