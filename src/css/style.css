@@ -349,7 +349,7 @@ p {
 } */
 
 .agenda-avisos {
-    width: 40%;
+    width: 50%;
     margin-right: 40px;
 }
 
@@ -409,14 +409,32 @@ p {
 }
 
 .imagem-agenda {
-    width: 30%;
+    width: 50%;
+    overflow: auto;
 }
+
 .imagem-agenda img {
-    width: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .container-agenda {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
+@media screen and (max-width: 992px) {
+    .container-agenda {
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+
+    .imagem-agenda, .agenda-avisos, .container-avisos .card  {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    
+}
