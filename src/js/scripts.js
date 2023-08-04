@@ -47,6 +47,14 @@ const time = [
         funcao: "Pessoa Instrutora",
         linkedin: "",
         github: ""
+    },
+    {
+        url: "https://ca.slack-edge.com/TM13XHBBQ-U037QQJ487M-973616d0c500-512",
+        nome: "Laís Paggi",
+        funcao: "Coordenadora de Turma",
+        linkedin: "",
+        github: ""
+        
     }
 ];
 
