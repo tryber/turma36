@@ -54,18 +54,18 @@ const time = [
         funcao: "Coordenadora de Turma",
         linkedin: "https://www.linkedin.com/in/la%C3%ADs-cristina-paggi-81897022/",
         github: ""
-        
+
     }
 ];
 
-const data = [
+const dataFAQ = [
     {
-        title:`Tenho que ter um computador para o curso? Se sim, qual?`,
+        title: `Tenho que ter um computador para o curso? Se sim, qual?`,
         description: `Sim. 
                      Durante o curso, a maioria das atividades que você irá desempenhar serão realizadas no seu próprio computador/notebook.`
     },
     {
-        title: "Posso utilizar o recurso WSL?" ,
+        title: "Posso utilizar o recurso WSL?",
         description: `Embora o Windows Subsystem for Linux (WSL) ofereça uma maneira conveniente de executar 
                     um ambiente Linux em um sistema Windows, ele também apresenta algumas desvantagens que 
                     podem afetar certos casos de uso. Aqui estão algumas das principais desvantagens do uso do WSL: <br><br>
@@ -93,7 +93,7 @@ const data = [
                     Não há restrições quanto ao uso de dual boot.`,
     },
     {
-        title: "Meu Zoom/Slack ou outros aplicativos travam ao utilizá-lo dentro do Linux. O que posso fazer?" ,
+        title: "Meu Zoom/Slack ou outros aplicativos travam ao utilizá-lo dentro do Linux. O que posso fazer?",
         description: `Se você estiver enfrentando problemas com a versão snap desses aplicativos, considere as seguintes soluções: <br><br>
 
                         * Reinstale o Ubuntu ou outra distribuição Linux em uma versão menos pesada;<br><br>
@@ -102,7 +102,7 @@ const data = [
                         * Instale os drivers corretos;`,
     },
     {
-        title: "Meu Linux 'congela' e não consigo utilizar nenhum Software." ,
+        title: "Meu Linux 'congela' e não consigo utilizar nenhum Software.",
         description: `Existem várias razões pelas quais um sistema Linux pode congelar ou travar. <br><br> 
                     Aqui estão alguns dos motivos mais comuns:<br><br>
 
@@ -179,12 +179,12 @@ const data = [
                         persistentes que não podem ser facilmente corrigidos de outra forma.`
     },
     {
-        title: "Não estou conseguindo fazer o dual boot. O que pode ser?" ,
+        title: "Não estou conseguindo fazer o dual boot. O que pode ser?",
         description: `Você pode tentar refazer o pendrive do Linux com o esquema de partição GPT, 
                      dar boot por ele e usar a opção de 'apagar o disco e reinstalar o ubuntu'. `,
     },
     {
-        title: "Não estou conseguindo compartilhar tela no ZOOM. A tela fica preta e o Zoom trava. O que pode ser?" ,
+        title: "Não estou conseguindo compartilhar tela no ZOOM. A tela fica preta e o Zoom trava. O que pode ser?",
         description: `A solução seria voltar para o antigo gerenciador de janelas, o Xorg. <br><br>
                         Para fazer isso, basta:<br><br>
                         * Acessar a tela de Login (talvez precise fazer logout para acessá-la caso o login seja automático no computador);<br>
@@ -195,7 +195,7 @@ const data = [
                         * Não acontecerão diferenças visuais notáveis nas janelas ao fazer essa mudança, porém agora o compartilhamento de tela no zoom funcionará normalmente! `,
     },
     {
-        title: "Existem requisitos mínimos de Hardware para acompanhar as aulas?" ,
+        title: "Existem requisitos mínimos de Hardware para acompanhar as aulas?",
         description: `Configuração de hardware mínima que recomendamos:<br><br>
                     * Processador:	Dual core ou superior compatível com arquitetura x86-64;<br>
                     * Memória RAM:	Pelo menos 4GB;<br><br>
@@ -205,21 +205,21 @@ const data = [
                     * WebCam: Integrada ao computador/notebook ou externa;`,
     },
     {
-        title: "Qual versão do Node utilizar?" ,
+        title: "Qual versão do Node utilizar?",
         description: `Recomendamos que você utilize sempre a versão LTS (Long Term Support), que é a versão atual mais estável do Node.`,
     },
     {
-        title: "Posso utilizar o Git For Education?" ,
+        title: "Posso utilizar o Git For Education?",
         description: `Sim. Você pode solicitar inclusive na Plataforma de Aprendizagem, em Suporte CSE -> Outros. Ou diretamente no link: 
                      <a href="https://app.betrybe.com/course/support/others"> https://app.betrybe.com/course/support/others </a>  `,
     },
     {
-        title: "Existe alguma versão de Linux mais leve que seja recomendado utilizar?" ,
+        title: "Existe alguma versão de Linux mais leve que seja recomendado utilizar?",
         description: `No caso do Linux, recomendamos a utilização do Xubuntu ou Lubuntu. Caso não se adapte a nenhuma das opções, o Pop! OS ou Linux Mint poderá ser utilizado.`,
     },
     {
-        title: "Como posso deixar o meu terminal colorido?" ,
-        description:   `Sugestão 1: material na plataforma, lá em Desenvolvimento Web: Vida Real -> Artigo 40 <br><br>
+        title: "Como posso deixar o meu terminal colorido?",
+        description: `Sugestão 1: material na plataforma, lá em Desenvolvimento Web: Vida Real -> Artigo 40 <br><br>
                         Sugestão 2: outro guia supimpa de bom: <a href="https://gist.github.com/kevin-smets/8568070"> https://gist.github.com/kevin-smets/8568070</a><br><br>
                         O guia fala de Mac, mas seguindo as mesmas dicas para o Linux funciona bem. Só umas observações:<br><br>
                         - O iTerm é um Terminal mais legal para quem usa Mac (não precisa disso no Linux)<br><br>
@@ -230,10 +230,44 @@ const data = [
 
 ];
 
+const mural = [
+    {
+        title: "Agenda para o dia 1.1",
+        text: "Confira aqui todo detalhamento do dia 1.1 que ocorre nesta segunda-feira, dia 07/08",
+        linksTitle: ["Mais informações em breve"],
+        links: ["Mais informações em breve"]
+    },
+    {
+        title: "Calendário Letivo",
+        text: "Confira aqui o Calendário Geral de 2023 e o Calendário do Módulo, até a última seção do módulo de Fundamentos, para que vocês possam se planejar.",
+        linksTitle: ["Calendário Módulo Fundamentos", "Calendário Geral 2023"],
+        links: ["https://docsend.com/view/recktt53j2aah9vc", "https://trybecourse.slack.com/archives/CMT2P6CVC/p1679346118924989"]
+    },
+    {
+        title: "Google for Startups",
+        text: "Parceria Instituto Vamo que Vamo e Google for Startups",
+        linksTitle: ["Mais informações aqui"],
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691107686367019"]
+    },
+    {
+        title: "Sobre os canais do Slack",
+        text: "Qual a função de cada canal aqui no Workspace Oficial do Curso Trybe?",
+        linksTitle: ["Mais informações aqui"],
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1690837847044419"]
+    },
+    {
+        title: "🚨 Username do GitHub 🚨",
+        text: "Já criou sua conta no GitHub e compartilhou no nosso forms o seu usuário?",
+        linksTitle: ["Nos sinalize aqui"],
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691147207381219"]
+    },
+];
+
+
 window.onload = () => {
     const containerInfo = document.querySelector('.container-info');
 
-    time.forEach( (pessoa) => {
+    time.forEach((pessoa) => {
         // Cria o elemento principal card
         let card = document.createElement('div');
         card.className = "card";
@@ -242,7 +276,7 @@ window.onload = () => {
         // Cria a imagem do card
         let img = document.createElement('img');
         img.className = "card-img-top";
-        img.src = pessoa.url;  
+        img.src = pessoa.url;
         img.alt = "...";
         card.appendChild(img);
 
@@ -287,12 +321,56 @@ window.onload = () => {
             linkGithub.appendChild(iconGithub);
             cardContainerSocial.appendChild(linkGithub);
         }
-        
+
         cardBody.appendChild(cardContainerSocial);
 
         // Adiciona o corpo do card ao card
         card.appendChild(cardBody);
         containerInfo.appendChild(card);
+    });
+
+    mural.forEach((info) => {
+        const agendaAvisos = document.querySelector(".container-avisos");
+
+        // Cria o elemento principal card
+        let card = document.createElement('div');
+        card.className = "card mx-1";
+
+        // Cria o corpo do card
+        let cardBody = document.createElement('div');
+        cardBody.className = "card-body";
+
+        // Cria o título do card
+        let title = document.createElement('h5');
+        title.className = "card-title";
+        title.textContent = info.title;
+        cardBody.appendChild(title);
+
+        // Cria o texto do card
+        let text = document.createElement('p');
+        text.className = "card-text";
+        text.textContent = info.text;
+        cardBody.appendChild(text);
+
+        info.links.forEach((linkInfo, index) => {
+            // Cria o link do card
+            let link = document.createElement('a');
+            link.className = "card-link";
+            link.href = linkInfo;
+            link.target = "_blank";
+            link.textContent = info.linksTitle[index];
+
+            link.appendChild(document.createElement('br'));
+            cardBody.appendChild(link);
+        });
+
+        // Adiciona o corpo do card ao card
+        card.appendChild(cardBody);
+
+        // Adiciona o card ao corpo do documento (ou qualquer outro elemento desejado)
+        agendaAvisos.appendChild(card);
+
+
     });
 
     // const body = document.querySelector('body');

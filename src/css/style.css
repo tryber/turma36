@@ -348,17 +348,14 @@ p {
     display: block;
 } */
 
-#agenda img {
-    width: 100px;
+.agenda-avisos {
+    width: 40%;
+    margin-right: 40px;
 }
-
-/* .agenda-avisos {
-    display: flex;
-} */
 
 .agenda-avisos a {
     text-decoration: none;
-    color: #1db702
+    color: #1db702;
 }
 
 #time .card-body {
@@ -406,3 +403,20 @@ p {
 .container-projeto div {
     margin: 100px;
 }
+
+.container-avisos .card {
+    width: 18rem;
+}
+
+.imagem-agenda {
+    width: 30%;
+}
+.imagem-agenda img {
+    width: 400px;
+}
+
+.container-agenda {
+    display: flex;
+    justify-content: center;
+}
+
