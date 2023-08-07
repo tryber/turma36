@@ -244,10 +244,10 @@ const mural = [
         links: ["https://docsend.com/view/recktt53j2aah9vc", "https://trybecourse.slack.com/archives/CMT2P6CVC/p1679346118924989"]
     },
     {
-        title: "Google for Startups",
-        text: "Parceria Instituto Vamo que Vamo e Google for Startups",
+        title: "Projetos e Exercícios",
+        text: "Divulgação de todos os repositórios referente ao 1º Período de Fundamentos.",
         linksTitle: ["Mais informações aqui"],
-        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691107686367019"]
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691433718847929"]
     },
     {
         title: "Sobre os canais do Slack",
