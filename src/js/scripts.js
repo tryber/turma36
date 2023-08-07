@@ -234,8 +234,8 @@ const mural = [
     {
         title: "Agenda para o dia 1.1",
         text: "Confira aqui todo detalhamento do dia 1.1 que ocorre nesta segunda-feira, dia 07/08",
-        linksTitle: ["Mais informações em breve"],
-        links: ["Mais informações em breve"]
+        linksTitle: ["Mais informações aqui"],
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691195400640379"]
     },
     {
         title: "Calendário Letivo",
