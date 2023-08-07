@@ -261,6 +261,12 @@ const mural = [
         linksTitle: ["Nos sinalize aqui"],
         links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691147207381219"]
     },
+    {
+        title: "🎥 Gravações Aulas e Monitorias 🎥",
+        text: "Você sabia que TODAS as aulas e algumas monitorias ficam gravadas? Nãaaaao? Então confere aqui:",
+        linksTitle: ["Link para gravações na Plataforma"],
+        links: ["https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/live-lectures/35e11e9b-190d-478d-bd79-e8091cfa0d87"]
+    },
 ];
 
 
