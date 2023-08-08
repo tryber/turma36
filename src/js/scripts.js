@@ -232,10 +232,10 @@ const dataFAQ = [
 
 const mural = [
     {
-        title: "Agenda para o dia 1.1",
-        text: "Confira aqui todo detalhamento do dia 1.1 que ocorre nesta segunda-feira, dia 07/08",
+        title: "Agenda para o dia",
+        text: "Confira aqui todo detalhamento do dia",
         linksTitle: ["Link para agenda do dia"],
-        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691195400640379"]
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691448872569069"]
     },
     {
         title: "Calendário Letivo",
