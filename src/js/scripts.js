@@ -245,7 +245,8 @@ const mural = [
     },
     {
         title: "Projetos e Exercícios",
-        text: "Divulgação de todos os repositórios referente ao 1º Período de Fundamentos.",
+        text: `Divulgação de todos os repositórios referente ao 1º Período de Fundamentos. 
+                <br><p class="importante">Abra PR uma ÚNICA vez.</p>`,
         linksTitle: ["Mais informações aqui"],
         links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691433718847929"]
     },
@@ -355,7 +356,7 @@ window.onload = () => {
         // Cria o texto do card
         let text = document.createElement('p');
         text.className = "card-text";
-        text.textContent = info.text;
+        text.innerHTML = info.text;
         cardBody.appendChild(text);
 
         info.links.forEach((linkInfo, index) => {

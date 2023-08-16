@@ -463,3 +463,24 @@ p {
     }
 }
 
+.importante {
+    position:relative;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    font-size: 1em;
+    letter-spacing: 1px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #f31515, #ee130b, #f50b0b);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,.1);
+  }
+  
+  @keyframes animate {
+    0% { background-position: -500%; }
+    100% { background-position: 500%; }
+  }
