@@ -232,16 +232,16 @@ const dataFAQ = [
 
 const mural = [
     {
-        title: "Agenda para o dia",
+        title: "🛠 LESSONS LEARNED: Tudo que você precisa saber",
+        text: "Está com dúvidas no projeto?", 
+        linksTitle: ["Mais informações aqui"],
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1692100734658349"]
+    },
+    {
+        title: "📒 Agenda do Dia",
         text: "Confira aqui todo detalhamento do dia",
         linksTitle: ["Link para agenda do dia"],
         links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691448872569069"]
-    },
-    {
-        title: "Calendário Letivo",
-        text: "Confira aqui o Calendário Geral de 2023 e o Calendário do Módulo, até a última seção do módulo de Fundamentos, para que vocês possam se planejar.",
-        linksTitle: ["Calendário Módulo Fundamentos", "Calendário Geral 2023"],
-        links: ["https://docsend.com/view/recktt53j2aah9vc", "https://trybecourse.slack.com/archives/CMT2P6CVC/p1679346118924989"]
     },
     {
         title: "Projetos e Exercícios",
@@ -250,22 +250,22 @@ const mural = [
         links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691433718847929"]
     },
     {
-        title: "Sobre os canais do Slack",
-        text: "Qual a função de cada canal aqui no Workspace Oficial do Curso Trybe?",
-        linksTitle: ["Mais informações aqui"],
-        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1690837847044419"]
-    },
-    {
-        title: "🚨 Username do GitHub 🚨",
-        text: "Já criou sua conta no GitHub e compartilhou no nosso forms o seu usuário?",
-        linksTitle: ["Nos sinalize aqui"],
-        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691147207381219"]
-    },
-    {
-        title: "🎥 Gravações Aulas e Monitorias 🎥",
+        title: "🎥 Gravações Aulas e Monitorias",
         text: "Você sabia que TODAS as aulas e algumas monitorias ficam gravadas? Nãaaaao? Então confere aqui:",
         linksTitle: ["Link para gravações na Plataforma"],
         links: ["https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/live-lectures/35e11e9b-190d-478d-bd79-e8091cfa0d87"]
+    },
+    {
+        title: "🗓 Calendários Letivos",
+        text: "Confira aqui o Calendário Geral de 2023 e o Calendário do Módulo, até a última seção do módulo de Fundamentos, para que vocês possam se planejar.",
+        linksTitle: ["Calendário Módulo Fundamentos", "Calendário Geral 2023"],
+        links: ["https://docsend.com/view/recktt53j2aah9vc", "https://trybecourse.slack.com/archives/CMT2P6CVC/p1679346118924989"]
+    },
+    {
+        title: "⌨️ Códigos da Aula ao Vivo",
+        text: "Quer consultar algum código feito na aula ao vivo?",
+        linksTitle: ["Link para o repositório"],
+        links: ["https://github.com/tryber/sd-036-live-lectures/pulls"]
     },
 ];
 
