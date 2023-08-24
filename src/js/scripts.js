@@ -232,10 +232,10 @@ const dataFAQ = [
 
 const mural = [
     {
-        title: "🛠 LESSONS LEARNED: Tudo que você precisa saber",
+        title: "🛠 SUP. PIRILAMPO: Tudo que você precisa saber",
         text: "Está com dúvidas no projeto?", 
         linksTitle: ["Mais informações aqui"],
-        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1692100734658349"]
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1692831123166969"]
     },
     {
         title: "📒 Agenda do Dia",
