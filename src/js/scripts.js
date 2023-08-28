@@ -231,12 +231,12 @@ const dataFAQ = [
 ];
 
 const mural = [
-    // {
-    //     title: "🛠 SUP. PIRILAMPO: Tudo que você precisa saber",
-    //     text: "Está com dúvidas no projeto?", 
-    //     linksTitle: ["Mais informações aqui"],
-    //     links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1692831123166969"]
-    // },
+    {
+        title: "🛠 PIXELS ART: Tudo que você precisa saber",
+        text: "Está com dúvidas no projeto?", 
+        linksTitle: ["Mais informações em breve"],
+        links: ["#"]
+    },
     {
         title: "📒 Agenda do Dia",
         text: "Confira aqui todo detalhamento do dia",
