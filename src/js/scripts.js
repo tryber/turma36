@@ -4,57 +4,72 @@ const time = [
         nome: "Enza Rafaela",
         funcao: "Pessoa Especialista",
         linkedin: "https://www.linkedin.com/in/enzarafaela/",
-        github: "https://github.com/enzarafaela"
+        github: "https://github.com/enzarafaela",
+        video: "https://docsend.com/view/gpxt8pjfnqdqaq55",
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U01FLMM2CJ1-c77bcc8d5e26-512",
         nome: "Carolzita",
         funcao: "Pessoa Especialista",
         linkedin: "https://www.linkedin.com/in/caabeatriz/",
-        github: "https://github.com/devcarolzita"
+        github: "https://github.com/devcarolzita",
+        video: "https://docsend.com/view/28ay8ks9eqwv4urk",
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U035TM9C7DJ-50dd640a9409-512",
         nome: "MariDê",
-        funcao: "Facilitação Soft Skills e Carreira",
+        funcao: "Soft Skills e Carreira",
         linkedin: "https://www.linkedin.com/in/mariana-demarchi/",
-        github: "https://github.com/madguarda"
+        github: "https://github.com/madguarda",
+        video: "https://docsend.com/view/qijyhizx5en4kkkx",
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U023CHBDWD8-27fd1acd067c-512",
         nome: "J Lo",
         funcao: "Facilitação Experiência",
         linkedin: "https://www.linkedin.com/in/jessica-lopes-/",
-        github: ""
+        github: "",
+        video: "",
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U01JQRR7FSS-08320a8171e3-512",
         nome: "Joi",
         funcao: "Pessoa Instrutora",
         linkedin: "https://www.linkedin.com/in/joioliveira/",
-        github: "https://github.com/joicyoliv"
+        github: "https://github.com/joicyoliv",
+        video: "",
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U03DNHZLCH1-1673b49a990f-512",
         nome: "Thalles",
         funcao: "Pessoa Instrutora",
         linkedin: "https://www.linkedin.com/in/thallescarneiro/",
-        github: "https://github.com/thalles-carneiro"
+        github: "https://github.com/thalles-carneiro",
+        video: "https://docsend.com/view/43jwqxfpqgywf3ig",
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U02BG785KB9-a2e4ac4dda7b-512",
         nome: "Ana Laura",
         funcao: "Pessoa Instrutora",
         linkedin: "https://www.linkedin.com/in/ana-laura-berger/",
-        github: "https://github.com/anabergerr"
+        github: "https://github.com/anabergerr",
+        video: "",
     },
     {
         url: "https://ca.slack-edge.com/TM13XHBBQ-U037QQJ487M-973616d0c500-512",
         nome: "Laís Paggi",
         funcao: "Coordenadora de Turma",
         linkedin: "https://www.linkedin.com/in/la%C3%ADs-cristina-paggi-81897022/",
-        github: ""
-
+        github: "",
+        video: "",
+    },
+    {
+        url: "https://ca.slack-edge.com/TM13XHBBQ-U03C488JB3K-314d5b166d97-192",
+        nome: "Angel",
+        funcao: "Carreira",
+        linkedin: "https://www.linkedin.com/in/angelina-rosendo/",
+        github: "",
+        video: "https://docsend.com/view/ey8tkqffei2cxai2",
     }
 ];
 
@@ -233,7 +248,7 @@ const dataFAQ = [
 const mural = [
     {
         title: "🛠 PIXELS ART: Tudo que você precisa saber",
-        text: "Está com dúvidas no projeto?", 
+        text: "Está com dúvidas no projeto?",
         linksTitle: ["Mais informações aqui"],
         links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1693520461948769"]
     },
@@ -270,8 +285,7 @@ const mural = [
     },
 ];
 
-
-window.onload = () => {
+const createTeam = () => {
     const containerInfo = document.querySelector('.container-info');
 
     time.forEach((pessoa) => {
@@ -314,19 +328,34 @@ window.onload = () => {
         // Cria o link do LinkedIn
         let linkLinkedin = document.createElement('a');
         linkLinkedin.href = pessoa.linkedin;  // Adicione o URL do perfil do LinkedIn aqui
+        linkLinkedin.target = '_blank';
+
         let iconLinkedin = document.createElement('i');
-        iconLinkedin.className = "bi bi-linkedin";
+        iconLinkedin.classList.add('bi', 'bi-linkedin', 'link-format');
         linkLinkedin.appendChild(iconLinkedin);
         cardContainerSocial.appendChild(linkLinkedin);
 
-        if (pessoa.github !== "") {
+        if (pessoa.github !== '') {
             // Cria o link do GitHub
             let linkGithub = document.createElement('a');
             linkGithub.href = pessoa.github;  // Adicione o URL do perfil do GitHub aqui
+            linkGithub.target = '_blank';
+
             let iconGithub = document.createElement('i');
-            iconGithub.className = "bi bi-github";
+            iconGithub.classList.add('bi', 'bi-github', 'link-format');
             linkGithub.appendChild(iconGithub);
             cardContainerSocial.appendChild(linkGithub);
+        }
+
+        if (pessoa.video !== '') {
+            let video = document.createElement('a');
+            video.href = pessoa.video;
+            video.target = '_blank';
+            iconVideo = document.createElement('i');
+            iconVideo.classList.add('card-video', 'link-format', 'bi', 'bi-camera-reels-fill');
+            
+            video.appendChild(iconVideo);
+            cardContainerSocial.appendChild(video);
         }
 
         cardBody.appendChild(cardContainerSocial);
@@ -335,10 +364,12 @@ window.onload = () => {
         card.appendChild(cardBody);
         containerInfo.appendChild(card);
     });
+}
+
+const createMural = () => {
+    const agendaAvisos = document.querySelector(".container-avisos");
 
     mural.forEach((info) => {
-        const agendaAvisos = document.querySelector(".container-avisos");
-
         // Cria o elemento principal card
         let card = document.createElement('div');
         card.className = "card mx-1";
@@ -362,7 +393,7 @@ window.onload = () => {
         info.links.forEach((linkInfo, index) => {
             // Cria o link do card
             let link = document.createElement('a');
-            link.className = "card-link";
+            link.classList.add('card-link', 'link-format');
             link.href = linkInfo;
             link.target = "_blank";
             link.textContent = info.linksTitle[index];
@@ -379,6 +410,11 @@ window.onload = () => {
 
 
     });
+}
+
+window.onload = () => {
+    createTeam();
+    createMural();
 
     // const body = document.querySelector('body');
     // data.forEach(element => {

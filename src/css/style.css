@@ -366,6 +366,7 @@ p {
 #time .card-text {
     font-size: 12px;
     color: #1db702;
+    margin: 0;
 }
 
 /* .agenda-avisos {
@@ -396,11 +397,11 @@ p {
     padding: 20px;
 }
 
-.imagem-projeto  img {
+.imagem-projeto img {
     width: 100%;
 }
 
-.info-projeto  {
+.info-projeto {
     margin: 100px 0;
     width: 400px;
 }
@@ -425,7 +426,7 @@ p {
     align-items: center;
 }
 
-.container-avisos a, .container-projetos a {
+.link-format  {
     text-decoration: none;
     color: #1db702;
 }
@@ -434,14 +435,20 @@ p {
     margin-top: 100px;
 }
 
+.card-video {
+    font-size: 12px;
+}
+
 @media screen and (max-width: 992px) {
     .container-agenda {
-       flex-direction: column;
-       align-items: center;
-       width: 100%;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    .imagem-agenda, .agenda-avisos, .container-avisos .card  {
+    .imagem-agenda,
+    .agenda-avisos,
+    .container-avisos .card {
         width: 100%;
         margin: 0 0 10px 0;
     }
@@ -453,7 +460,7 @@ p {
         margin-top: 20px;
     }
 
-    .imagem-projeto  {
+    .imagem-projeto {
         width: 100%;
     }
 
@@ -464,7 +471,7 @@ p {
 }
 
 .importante {
-    position:relative;
+    position: relative;
     font-family: sans-serif;
     color: #fff;
     font-weight: 600;
@@ -477,10 +484,15 @@ p {
     background-size: 80%;
     animation: animate 3s linear infinite;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255,255,255,.1);
-  }
-  
-  @keyframes animate {
-    0% { background-position: -500%; }
-    100% { background-position: 500%; }
-  }
+    -webkit-text-fill-color: rgba(255, 255, 255, .1);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
