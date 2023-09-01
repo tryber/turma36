@@ -234,8 +234,8 @@ const mural = [
     {
         title: "🛠 PIXELS ART: Tudo que você precisa saber",
         text: "Está com dúvidas no projeto?", 
-        linksTitle: ["Mais informações em breve"],
-        links: ["#"]
+        linksTitle: ["Mais informações aqui"],
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1693520461948769"]
     },
     {
         title: "📒 Agenda do Dia",
