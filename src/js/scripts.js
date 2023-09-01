@@ -253,6 +253,12 @@ const mural = [
         links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1693520461948769"]
     },
     {
+        title: "🚨 Cuidado com a Violação da Integridade Intelectual",
+        text: "Você sabe o que é Validação de Autoria? ",
+        linksTitle: ["Mais informações aqui"],
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691761898386139"]
+    },
+    {
         title: "📒 Agenda do Dia",
         text: "Confira aqui todo detalhamento do dia",
         linksTitle: ["Link para agenda do dia"],
@@ -266,22 +272,16 @@ const mural = [
         links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1691433718847929"]
     },
     {
-        title: "🎥 Gravações Aulas e Monitorias",
-        text: "Você sabia que TODAS as aulas e algumas monitorias ficam gravadas? Nãaaaao? Então confere aqui:",
-        linksTitle: ["Link para gravações na Plataforma"],
-        links: ["https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/live-lectures/35e11e9b-190d-478d-bd79-e8091cfa0d87"]
+        title: "🎥 Gravações/Códigos Aulas e Monitorias",
+        text: "Consulte as gravações de aulas + repositório de códigos.",
+        linksTitle: ["Link para gravações na Plataforma", "Link repositório"],
+        links: ["https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/live-lectures/35e11e9b-190d-478d-bd79-e8091cfa0d87", "https://github.com/tryber/sd-036-live-lectures/pulls"]
     },
     {
         title: "🗓 Calendários Letivos",
         text: "Confira aqui o Calendário Geral de 2023 e o Calendário do Módulo, até a última seção do módulo de Fundamentos, para que vocês possam se planejar.",
         linksTitle: ["Calendário Módulo Fundamentos", "Calendário Geral 2023"],
         links: ["https://docsend.com/view/recktt53j2aah9vc", "https://trybecourse.slack.com/archives/CMT2P6CVC/p1679346118924989"]
-    },
-    {
-        title: "⌨️ Códigos da Aula ao Vivo",
-        text: "Quer consultar algum código feito na aula ao vivo?",
-        linksTitle: ["Link para o repositório"],
-        links: ["https://github.com/tryber/sd-036-live-lectures/pulls"]
     },
 ];
 
