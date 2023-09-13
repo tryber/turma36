@@ -247,10 +247,10 @@ const dataFAQ = [
 
 const mural = [
     {
-        title: "🛠 PIXELS ART: Tudo que você precisa saber",
+        title: "🛠 TRYBEWARTS: Tudo que você precisa saber",
         text: "Está com dúvidas no projeto?",
-        linksTitle: ["Mais informações aqui"],
-        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1693520461948769"]
+        linksTitle: ["Mais informações em breve aqui"],
+        links: ["#"]
     },
     {
         title: "🚨 Cuidado com a Violação da Integridade Intelectual",
@@ -282,6 +282,52 @@ const mural = [
         text: "Confira aqui o Calendário Geral de 2023 e o Calendário do Módulo, até a última seção do módulo de Fundamentos, para que vocês possam se planejar.",
         linksTitle: ["Calendário Módulo Fundamentos", "Calendário Geral 2023"],
         links: ["https://docsend.com/view/recktt53j2aah9vc", "https://trybecourse.slack.com/archives/CMT2P6CVC/p1679346118924989"]
+    },
+];
+
+const projects = [
+    // {
+    //     image: './assets/lessons-learned.png',
+    //     title: 'Lessons Learned',
+    //     url: 'https://github.com/tryber/sd-036-project-lessons-learned',
+    //     description: 'Projeto que aborda elementos semânticos e não semânticos do HTML e CSS.',
+    //     points: 'Pontos: 5',
+    // },
+    // {
+    //     image: './assets/pirilampo.png',
+    //     title: 'Supermercado Pirilampo',
+    //     url: 'https://github.com/tryber/sd-036-supermercado-pirilampo',
+    //     description: `Projeto para você construir funções utilizando JavaScript, para você praticar lógica de
+    //     programação. Praticando if/else, laços de repetição, funções, objetos`,
+    //     points: 'Pontos: 55',
+    // },
+    // {
+    //     image: './assets/pixels-art.png',
+    //     title: 'Pixels Art',
+    //     url: 'https://github.com/tryber/sd-036-project-lessons-learned',
+    //     description: 'Projeto que aborda elementos semânticos e não semânticos do HTML e CSS.',
+    //     points: 'Pontos: 40',
+    // },
+    {
+        image: './assets/trybewarts.png',
+        title: 'Trybewarts',
+        url: 'https://github.com/tryber/sd-036-project-trybewarts',
+        description: 'Projeto para colocar em prática novos conhecimentos com HTML + CSS, usando formulários e seus inputs. Possibilidade de colocar o Bootstrap pra jogo!!!!',
+        points: 'Pontos: 5',
+    },
+    {
+        image: './assets/unit-test.webp',
+        title: 'Unit Tests',
+        url: 'https://github.com/tryber/sd-036-project-js-unit-tests',
+        description: 'A project about unit tests in JavaScript using JEST',
+        points: 'Pontos: 20',
+    },
+    {
+        image: './assets/zoo-functions.jpeg',
+        title: 'Zoo Functions',
+        url: 'https://github.com/tryber/sd-036-project-zoo-functions',
+        description: 'Construção de diversas funções utilizando basicamente as HOFs aprendidas durante a seção 7 e testes (utilizando JEST).',
+        points: 'Pontos: 75',
     },
 ];
 
@@ -353,7 +399,7 @@ const createTeam = () => {
             video.target = '_blank';
             iconVideo = document.createElement('i');
             iconVideo.classList.add('card-video', 'link-format', 'bi', 'bi-camera-reels-fill');
-            
+
             video.appendChild(iconVideo);
             cardContainerSocial.appendChild(video);
         }
@@ -412,9 +458,52 @@ const createMural = () => {
     });
 }
 
+const createProjects = () => {
+    const containerPrjetos = document.querySelector('.container-projetos');
+
+    projects.forEach((project) => {
+        const containerProjeto = document.createElement('div');
+        containerProjeto.classList.add('container-projeto');
+
+        const imagemProjetoDiv = document.createElement('div');
+        imagemProjetoDiv.classList.add('imagem-projeto');
+        const projectImage = document.createElement('img');
+        projectImage.setAttribute('src', project.image);
+        projectImage.setAttribute('alt', project.title);
+        imagemProjetoDiv.appendChild(projectImage);
+        containerProjeto.appendChild(imagemProjetoDiv);
+
+        const infoProjetoDiv = document.createElement('div');
+        infoProjetoDiv.classList.add('info-projeto');
+
+        const h2Element = document.createElement('h2');
+        h2Element.textContent = project.title;
+        infoProjetoDiv.appendChild(h2Element);
+
+        const pElement = document.createElement('p');
+        pElement.textContent = project.description;
+        infoProjetoDiv.appendChild(pElement);
+
+        const h3Element = document.createElement('h3');
+        h3Element.textContent = project.points;  
+        infoProjetoDiv.appendChild(h3Element);
+
+        const aElement = document.createElement('a');
+        aElement.setAttribute('href', project.url);
+        aElement.classList.add('link-format');
+        aElement.textContent = "Link para o repositório";
+        infoProjetoDiv.appendChild(aElement);
+
+        containerProjeto.appendChild(infoProjetoDiv);
+
+        containerPrjetos.appendChild(containerProjeto);
+    });
+}
+
 window.onload = () => {
     createTeam();
     createMural();
+    createProjects();
 
     // const body = document.querySelector('body');
     // data.forEach(element => {
