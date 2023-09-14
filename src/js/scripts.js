@@ -249,8 +249,8 @@ const mural = [
     {
         title: "🛠 TRYBEWARTS: Tudo que você precisa saber",
         text: "Está com dúvidas no projeto?",
-        linksTitle: ["Mais informações em breve aqui"],
-        links: ["#"]
+        linksTitle: ["Mais informações aqui"],
+        links: ["https://trybecourse.slack.com/archives/C05KM4D7L82/p1694646144440759"]
     },
     {
         title: "🚨 Cuidado com a Violação da Integridade Intelectual",

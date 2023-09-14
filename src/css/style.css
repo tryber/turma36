@@ -64,7 +64,7 @@ p {
 .button {
     width: 48px;
     height: 70px;
-    /* background: rgb(255, 196, 0); */
+    background: rgb(255, 196, 0);
     padding: 12px;
     display: inline-block;
     cursor: pointer;
@@ -141,7 +141,7 @@ nav a:hover {
 
 /* the nav height will be set to the height in pixels that would have for default, using height:auto won't work but you can put that value in pixels creating the slide*/
 #check:checked~nav {
-    height: 144px;
+    height: 192px;
 }
 
 #check:checked~nav a {
@@ -209,7 +209,7 @@ nav a:hover {
     padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
     .sandwich {
         display: inline;
     }
@@ -299,7 +299,8 @@ iframe {
 
 #agenda h2,
 #time h2,
-#projetos h2 {
+#projetos h2,
+#jornada h2 {
     font-size: 35px;
     line-height: 40px;
     font-weight: 800;
@@ -402,7 +403,7 @@ p {
 }
 
 .info-projeto {
-    margin: 100px 0;
+    margin: 50px 0;
     width: 400px;
 }
 
@@ -495,4 +496,15 @@ p {
     100% {
         background-position: 500%;
     }
+}
+
+
+#jornada {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    padding-top: 70px;
+    text-align: center;
 }
